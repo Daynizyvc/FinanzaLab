@@ -4,9 +4,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/png" href="IMG/mano.png"/>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="font.css"> 
     <title>FinanzaLab</title>
 </head>
+
 <body>
-    
+    <section class="transferencia">
+        <div>
+            <div class="header-transferencia">               
+                    <img src="IMG/logo_finanzas-02.png">     
+            </div>            
+            <div class="title-transferencia">
+                <span class="icon-loop"></span>
+                <h1>TRANSFERENCIA</h1>
+            </div>           
+            <div>
+                <div class="box-input">
+                    <p>DE:</p>
+                    <input type="email" placeholder="ejemplo@ejemplo.com" class="input-inf">
+                </div>
+                <div  class="box-input">
+                    <p>Para:</p>
+                    <input type="email" placeholder="ejemplo@ejemplo.com" class="input-inf">
+                    <input type="button" class="add-wallet" id="add-wallet" value="&#xe900;">
+                </div>
+                <div  class="box-input">
+                    <p>Moneda:</p>
+                    <select>
+                        <option value="mexico">$(MXN)</option>
+                        <option vale="usd">$(USD)</option>
+                        <option value="euro">€ (EURO)</option>
+                    </select>
+                </div>
+                <div  class="box-input">
+                    <p>Monto:</p>
+                    <input type="text"  class="input-inf">
+                </div>
+                <div  class="box-input"> 
+                    <p>Concepto:</p>
+                    <input type="text"  class="input-inf">
+                </div>
+                <div class="btn-acept">
+                    <input type="button" value="ACEPTAR" id="btn-yes" class="btn-yes">
+                </div>
+                
+                <!-- <span class="icon-credit-card"></span>
+                <span class="icon-tab"></span>
+                <span class="icon-credit-card"></span> -->                 
+            </div>      
+        </div>
+    </section>
 </body>
 </html>
