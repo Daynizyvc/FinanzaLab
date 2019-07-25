@@ -3,9 +3,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="icon" type="image/png" href="IMG/mano.png"/>
     <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="font.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+
     <title>FinanzaLab</title>
 </head>
 
@@ -16,9 +18,8 @@
                     <img src="IMG/logo_finanzas-02.png">     
             </div>            
             <div class="title-transferencia">
-                <span class="icon-loop"></span>
                 <h1>TRANSFERENCIA</h1>
-            </div>           
+            </div>   
             <div>
                 <div class="box-input">
                     <p>DE:</p>
@@ -26,12 +27,11 @@
                 </div>
                 <div  class="box-input">
                     <p>Para:</p>
-                    <input type="email" placeholder="ejemplo@ejemplo.com" class="input-inf">
-                    <input type="button" class="add-wallet" id="add-wallet" value="&#xe900;">
+                    <input type="email" placeholder="ejemplo@ejemplo.com" class="input-inf" id="destinatario">
                 </div>
                 <div  class="box-input">
                     <p>Moneda:</p>
-                    <select>
+                    <select id="select-money">
                         <option value="mexico">$(MXN)</option>
                         <option vale="usd">$(USD)</option>
                         <option value="euro">€ (EURO)</option>
@@ -39,7 +39,7 @@
                 </div>
                 <div  class="box-input">
                     <p>Monto:</p>
-                    <input type="text"  class="input-inf">
+                    <input type="text" placeholder="$0,000" class="input-inf" id="monto">
                 </div>
                 <div  class="box-input"> 
                     <p>Concepto:</p>
@@ -47,13 +47,19 @@
                 </div>
                 <div class="btn-acept">
                     <input type="button" value="ACEPTAR" id="btn-yes" class="btn-yes">
-                </div>
-                
-                <!-- <span class="icon-credit-card"></span>
-                <span class="icon-tab"></span>
-                <span class="icon-credit-card"></span> -->                 
-            </div>      
+                </div>               
+            </div> 
+            <div class="modal-yes" id="modal-yes">
+                <h2>¡TRANSFERENCIA EXITOSA!</h2>
+    
+                <p> Enviado a:</p>
+                <p id="destinity"></p>
+                <p>Monto:</p>
+                <p id="monto-a"></p>
+                <input type="button" id="btn-modal" class="btn-modal" value="ACEPTAR">
+            </div>            
         </div>
     </section>
+    <script src="app.js"></script>
 </body>
 </html>
